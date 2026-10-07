@@ -115,6 +115,8 @@ jobs:
       - name: Package test products
         run: ditto -c -k .build/ui-derived/Build/Products .build/ui-products.zip
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        id: ui-products
+        background: true
         with:
           name: ui-products-macos-${{ inputs.runtime-major }}
           path: .build/ui-products.zip
@@ -126,6 +128,7 @@ jobs:
           name: ui-build-macos-${{ inputs.runtime-major }}
           path: .build/ui-build.log
           retention-days: 1
+      - wait: ui-products
 
   audit:
     name: ${{ matrix.group }} (macOS ${{ inputs.runtime-major }})
