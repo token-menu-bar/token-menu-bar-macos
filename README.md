@@ -5,12 +5,13 @@ later on Apple silicon or Intel.
 
 ## Install
 
-Download `TokenMenuBar.dmg` from the [latest release](https://github.com/tox-dev/token-menu-bar-macos/releases/latest),
-or install it through Homebrew:
+Download `TokenMenuBar.dmg` from the
+[latest release](https://github.com/token-menu-bar/token-menu-bar-macos/releases/latest), or install it through
+Homebrew:
 
 ```sh
-brew tap tox-dev/token-menu-bar https://github.com/tox-dev/token-menu-bar-macos
-brew trust --cask tox-dev/token-menu-bar/token-menu-bar
+brew tap token-menu-bar/token-menu-bar https://github.com/token-menu-bar/token-menu-bar-macos
+brew trust --cask token-menu-bar/token-menu-bar/token-menu-bar
 brew install --cask token-menu-bar
 ```
 

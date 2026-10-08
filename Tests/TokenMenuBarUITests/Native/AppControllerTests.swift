@@ -519,7 +519,7 @@ func openingSettingsPreparesCurrentUsageBeforeItsHost(visible: Bool) throws {
   actions.copyDiagnostics()
   #expect(recorder.copied.last?.hasPrefix("Token Menu Bar 1.2.3") == true)
   actions.reportIssue()
-  #expect(recorder.urls.last?.path == "/tox-dev/token-menu-bar-macos/issues/new")
+  #expect(recorder.urls.last?.path == "/token-menu-bar/token-menu-bar-macos/issues/new")
   actions.showFullLog()
   actions.showFullLog()
   actions.setLaunchAtLogin(true)

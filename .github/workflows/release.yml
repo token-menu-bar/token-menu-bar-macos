@@ -19,7 +19,7 @@ jobs:
   preflight:
     name: Which legs can run
     # Only this repository holds the signing identities; a fork that runs the workflow gets nothing to leak.
-    if: github.repository == 'tox-dev/token-menu-bar-macos'
+    if: github.repository == 'token-menu-bar/token-menu-bar-macos'
     runs-on: ubuntu-26.04
     # The signing secrets live in this environment, so every job that touches them names it and inherits its
     # protection rules.

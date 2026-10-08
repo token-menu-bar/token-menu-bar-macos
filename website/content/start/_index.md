@@ -9,18 +9,18 @@ aliases: [/start/install/]
 
 Token Menu Bar targets macOS 15, 26 and 27 on Apple silicon and Intel.
 
-[Version 0.1.0](https://github.com/tox-dev/token-menu-bar-macos/releases/latest) is the current release. Apple notarized
-both downloads, so Gatekeeper opens them without a detour through System Settings.
+[Version 0.1.0](https://github.com/token-menu-bar/token-menu-bar-macos/releases/latest) is the current release. Apple
+notarized both downloads, so Gatekeeper opens them without a detour through System Settings.
 
-| Channel         | Install and update                                                                                                                                                                                                |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Direct download | Download `TokenMenuBar.dmg` from the [latest release](https://github.com/tox-dev/token-menu-bar-macos/releases/latest), drag the app to `/Applications`, then open it. This build updates itself through Sparkle. |
-| Homebrew        | Tap this repository, trust the cask, then install it. The commands are below. This build carries no updater, so `brew upgrade` brings each new version.                                                           |
-| App Store       | No listing yet. The sandboxed build needs provider resource grants, and the upload leg of the release waits on App Store credentials.                                                                             |
+| Channel         | Install and update                                                                                                                                                                                                       |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Direct download | Download `TokenMenuBar.dmg` from the [latest release](https://github.com/token-menu-bar/token-menu-bar-macos/releases/latest), drag the app to `/Applications`, then open it. This build updates itself through Sparkle. |
+| Homebrew        | Tap this repository, trust the cask, then install it. The commands are below. This build carries no updater, so `brew upgrade` brings each new version.                                                                  |
+| App Store       | No listing yet. The sandboxed build needs provider resource grants, and the upload leg of the release waits on App Store credentials.                                                                                    |
 
 ```sh
-brew tap tox-dev/token-menu-bar https://github.com/tox-dev/token-menu-bar-macos
-brew trust --cask tox-dev/token-menu-bar/token-menu-bar
+brew tap token-menu-bar/token-menu-bar https://github.com/token-menu-bar/token-menu-bar-macos
+brew trust --cask token-menu-bar/token-menu-bar/token-menu-bar
 brew install --cask token-menu-bar
 ```
 

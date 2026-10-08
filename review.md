@@ -5,14 +5,14 @@ fully green CI run on the final commit. Earlier passes and cancelled groups do n
 
 ## Confirmed failures
 
-Candidate `a599d23`, [run 34566788923](https://github.com/tox-dev/token-menu-bar-macos/actions/runs/34566788923):
+Candidate `a599d23`, [run 34566788923](https://github.com/token-menu-bar/token-menu-bar-macos/actions/runs/34566788923):
 
-- Candidate `dccfefc`, [run 34581726798](https://github.com/tox-dev/token-menu-bar-macos/actions/runs/34581726798),
+- Candidate `dccfefc`, [run 34581726798](https://github.com/token-menu-bar/token-menu-bar-macos/actions/runs/34581726798),
   passes nine of ten macOS 14 lifecycle tests, including all four previously failing hittability checks, launch budget,
   footprint and History return-to-idle. Demo off/on still fails when turning Demo back on: the replacement's Settings
   popover opens after the five-second stable-window deadline. The log places 3.5 seconds between the stable-anchor check
   and the window-chrome callback. The targeted startup profile on `c297a2d`,
-  [run 34702362900](https://github.com/tox-dev/token-menu-bar-macos/actions/runs/34702362900), reproduces the failure.
+  [run 34702362900](https://github.com/token-menu-bar/token-menu-bar-macos/actions/runs/34702362900), reproduces the failure.
   Of 4,987 main-thread samples, 2,083 are in the layout triggered by popover positioning. SwiftUI generic metadata
   lookup and model-list construction dominate that path, not recursive keyboard-focus traversal. Named provider-header
   and model-row views now separate the list's generic content types; native performance remains unverified. Complete tab

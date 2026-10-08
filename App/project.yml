@@ -129,7 +129,7 @@ targets:
         product: Sparkle
     info:
       properties:
-        SUFeedURL: https://github.com/tox-dev/token-menu-bar-macos/releases/latest/download/appcast.xml
+        SUFeedURL: https://github.com/token-menu-bar/token-menu-bar-macos/releases/latest/download/appcast.xml
         SUPublicEDKey: $(SPARKLE_PUBLIC_ED_KEY)
         SUEnableAutomaticChecks: false
         SUEnableInstallerLauncherService: true

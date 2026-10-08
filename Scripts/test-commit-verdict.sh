@@ -4,7 +4,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 probe="$(mktemp -d "${TMPDIR:-/tmp}/token-menu-bar-commit-verdict.XXXXXX")"
 trap 'rm -rf "$probe"' EXIT
-export GITHUB_STEP_SUMMARY="$probe/summary" REPOSITORY=tox-dev/token-menu-bar-macos PATH="$probe/bin:$PATH"
+export GITHUB_STEP_SUMMARY="$probe/summary" REPOSITORY=token-menu-bar/token-menu-bar-macos PATH="$probe/bin:$PATH"
 
 mkdir -p "$probe/bin"
 cat > "$probe/bin/gh" << 'STUB'

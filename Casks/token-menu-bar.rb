@@ -2,10 +2,10 @@ cask "token-menu-bar" do
   version "0.1.7"
   sha256 "ae1027d51809c85daa92516645586595a2f8920ace2220ff8d2a7c41c43f1abd"
 
-  url "https://github.com/tox-dev/token-menu-bar-macos/releases/download/v#{version}/TokenMenuBar-Homebrew.dmg"
+  url "https://github.com/token-menu-bar/token-menu-bar-macos/releases/download/v#{version}/TokenMenuBar-Homebrew.dmg"
   name "Token Menu Bar"
   desc "Menu bar monitor for Claude, Codex, Gemini, Antigravity, Cursor and Copilot usage limits"
-  homepage "https://github.com/tox-dev/token-menu-bar-macos"
+  homepage "https://github.com/token-menu-bar/token-menu-bar-macos"
 
   livecheck do
     url :url

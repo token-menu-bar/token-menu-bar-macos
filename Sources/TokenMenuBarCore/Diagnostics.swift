@@ -68,7 +68,7 @@ public struct AppInfo: Sendable, Equatable {
   public var isAppStore: Bool { distribution.isAppStore }
   public var canSelfUpdate: Bool { distribution.allowsSelfUpdate && selfUpdateEnabled }
 
-  public static let repositoryURL = URL(string: "https://github.com/tox-dev/token-menu-bar-macos")!
+  public static let repositoryURL = URL(string: "https://github.com/token-menu-bar/token-menu-bar-macos")!
   /// The same address App Store Connect lists, so the policy is reachable from inside the app as well.
   public static let privacyPolicyURL = URL(
     string: "https://token-menu-bar-macos.readthedocs.io/en/latest/explanation/privacy/")!
