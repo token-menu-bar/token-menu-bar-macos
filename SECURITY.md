@@ -2,8 +2,8 @@
 
 ## Reporting a vulnerability
 
-Use [GitHub security advisories](https://github.com/tox-dev/token-menu-bar-macos/security/advisories/new) for issues
-that could expose credentials. Do not post tokens, credential files or private transcripts in public issues.
+Use [GitHub security advisories](https://github.com/token-menu-bar/token-menu-bar-macos/security/advisories/new) for
+issues that could expose credentials. Do not post tokens, credential files or private transcripts in public issues.
 
 Include the source version and channel from Settings > About, reproduction steps and the observed result. **Copy
 Diagnostics** is in the Settings footer. Review its account, usage and path information before sharing it.

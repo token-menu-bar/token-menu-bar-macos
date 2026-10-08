@@ -12,7 +12,7 @@ Use a published [release](/start/) for a normal install. Build from source to wo
 [just](https://just.systems) drives the workflows.
 
 ```sh
-git clone https://github.com/tox-dev/token-menu-bar-macos
+git clone https://github.com/token-menu-bar/token-menu-bar-macos
 cd token-menu-bar-macos
 mise install
 brew install jq tesseract webp

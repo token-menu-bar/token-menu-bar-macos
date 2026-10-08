@@ -11,7 +11,7 @@ mode="${2:-}"
   exit 1
 }
 out="dist/direct"
-download_prefix="https://github.com/tox-dev/token-menu-bar-macos/releases/download/v${version}/"
+download_prefix="https://github.com/token-menu-bar/token-menu-bar-macos/releases/download/v${version}/"
 
 generate_appcast="$(
   find ~/Library/Developer/Xcode/DerivedData "$PWD/App" -path '*/artifacts/sparkle/Sparkle/bin/generate_appcast' \

@@ -10,7 +10,7 @@ weight: 4
 bare `swift test` does not set up that render-check workflow. Render fixtures have no windows. CI also requires the
 native package suite, full coverage and scripted application checks. `just test-native`, `just coverage` and `just ui`
 require a GitHub-hosted desktop; do not bypass their guards on a developer Mac. See
-[the test workflow](https://github.com/tox-dev/token-menu-bar-macos/blob/main/CONTRIBUTING.md) for the execution
+[the test workflow](https://github.com/token-menu-bar/token-menu-bar-macos/blob/main/CONTRIBUTING.md) for the execution
 boundary. `just ui-local --prepare-only all` builds and validates the verification-only application without opening it.
 `just ui-local TokenMenuBarApplicationUITests/TokenMenuBarApplicationUITests/testEveryTabExposesNamedControls` runs a
 named application UI test on the current desktop. This explicit route uses internal temporary products and mock

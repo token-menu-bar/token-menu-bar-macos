@@ -9,7 +9,7 @@ import TokenMenuBarTestSupport
   #expect(!info.version.isEmpty)
   #expect(info.isAppStore)
   #expect(info.repository == AppInfo.repositoryURL)
-  #expect(info.releasesURL.path == "/tox-dev/token-menu-bar-macos/releases")
+  #expect(info.releasesURL.path == "/token-menu-bar/token-menu-bar-macos/releases")
   let bare = AppInfo.from(bundle: Bundle(), isAppStore: false)
   #expect(bare.name == "Token Menu Bar")
   #expect(bare.version == "0.0.0")
@@ -137,7 +137,8 @@ func appInfoNamesPrereleaseBuilds(sourceVersion: String, prerelease: Bool) {
   #expect(!report.contains("- Codex:"))
   #expect(report.hasSuffix("[info] hello"))
   let url = Diagnostics.issueURL(repository: app.repository, title: "Bug", report: report)
-  #expect(url.absoluteString.hasPrefix("https://github.com/tox-dev/token-menu-bar-macos/issues/new?title=Bug&body="))
+  #expect(
+    url.absoluteString.hasPrefix("https://github.com/token-menu-bar/token-menu-bar-macos/issues/new?title=Bug&body="))
   #expect(url.absoluteString.count <= Diagnostics.maxIssueURLLength)
 }
 

@@ -19,7 +19,7 @@ permissions:
 jobs:
   tag:
     name: Tag the release
-    if: github.repository == 'tox-dev/token-menu-bar-macos'
+    if: github.repository == 'token-menu-bar/token-menu-bar-macos'
     runs-on: ubuntu-26.04
     permissions:
       contents: write
