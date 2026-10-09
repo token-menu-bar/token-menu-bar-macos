@@ -1,3 +1,5 @@
+default_language_version:
+  python: python3.15
 exclude: ^(website/public|website/resources|dist)/
 ci:
   # swift-format needs a Swift toolchain, which the Linux runner does not have. The Lint job on macOS is where
