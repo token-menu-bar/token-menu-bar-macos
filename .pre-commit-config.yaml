@@ -1,3 +1,5 @@
+default_language_version:
+  python: python3.15
 exclude: ^(website/public|website/resources|dist)/
 ci:
   # swift-format needs a Swift toolchain, which the Linux runner does not have. The Lint job on macOS is where
@@ -59,7 +61,7 @@ repos:
       - id: prettier
         # The Hugo templates are Go templates in .html files, which prettier cannot parse
         files: ^website/assets/.*\.(css|js)$
-  - repo: https://github.com/rhysd/actionlint
+  - repo: https://github.com/devantler/actionlint
     # Parallel-step support is pending in https://github.com/rhysd/actionlint/pull/695.
     rev: bf6b9188a5fd7b4e7b7d244a865a60165bdc6783
     hooks:

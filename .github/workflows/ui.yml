@@ -219,7 +219,7 @@ jobs:
           while IFS= read -r selector; do
             selectors+=("$UI_TARGET/$selector")
           done < <(jq -r --arg group "$UI_GROUP" --arg test "$UI_TEST" '.[$group][] | select($test == "" or . == $test)' .github/ui-test-groups.json)
-          uv run Scripts/local_ui_tests.py --suite "$UI_SUITE" --check-results .build/ui-results/tests.json "${selectors[@]}"
+          uv run --python 3.15 Scripts/local_ui_tests.py --suite "$UI_SUITE" --check-results .build/ui-results/tests.json "${selectors[@]}"
       - name: Verify result export integrity
         if: ${{ !cancelled() && matrix.group == 'file-choosers' && steps.evidence.outcome == 'success' }}
         run: Scripts/test-ui-results.sh .build/ui-results.xcresult
